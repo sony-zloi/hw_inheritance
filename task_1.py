@@ -37,8 +37,10 @@ class Blender(Device):
 
 class MeatGrinder(Device):
     """Устройство автоматизурующее процесс изготовления мясного фарша"""
-    def __init__(self, power: int, capacity: int ):
+
+    def __init__(self, power: int, capacity: int):
         self._power = power
         self._capacity = capacity
+
 
 
