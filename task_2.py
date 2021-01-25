@@ -6,14 +6,20 @@ Destroyer (содержит информацию об эсминце), клас�
 """
 
 
-class Ship(object):
-    def __init__(self, length, name):
-        self.length = length
-        self.name = name
+class Ship():
+    """Класс описывающий корабль"""
+
+    def __init__(self, length: float, name: str, displacement: float):
+        self._length = length
+        self._name = name
+        self._displacement = displacement
 
 
 class Frigate(Ship):
-    pass
+    """Класс описывающий фрегат"""
+
+    def __init__(self):
+        super().__init__()
 
 
 class Cruiser(Ship):
