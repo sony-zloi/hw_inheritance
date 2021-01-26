@@ -18,13 +18,20 @@ class Ship():
 class Frigate(Ship):
     """Класс описывающий фрегат"""
 
+    def __init__(self, number_of_guns: int):
+        super().__init__()
+        self._number_of_guns = number_of_guns
+
+
+class Cruiser(Ship):
+    """Класс описывающий крейсер"""
+
     def __init__(self):
         super().__init__()
 
 
-class Cruiser(Ship):
-    pass
-
-
 class Destroyer(Ship):
-    pass
+    """Класс описывающий эсминец"""
+
+    def __init__(self):
+        super().__init__()
